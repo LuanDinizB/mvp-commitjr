@@ -6,7 +6,9 @@ export default function Lançamentos() {
     return (
 
         <div class="pos-cabeca">           
-           <Carousel></Carousel>
+           
+          <Carousel></Carousel>
+           
         </div>
       
     )
