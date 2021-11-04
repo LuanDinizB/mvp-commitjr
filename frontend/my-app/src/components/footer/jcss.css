@@ -1,0 +1,24 @@
+footer{  
+    background-color: #e0e0e0;
+    height: 100px;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+    align-items: center;    
+  }
+
+  
+  .meio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .imagemLuan{
+    width: 70px;
+  }
+  .logoCommit{
+    width: 100px;
+  }
+ 

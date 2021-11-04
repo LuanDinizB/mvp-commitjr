@@ -1,0 +1,42 @@
+
+.pos-cabeca{
+    background-color: #332e2ecf;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 632px;
+}  
+
+.titulos{
+    display:flex;
+    font-size: 2vw;
+    text-decoration: underline;
+    height: min-content;
+    justify-content: center;
+  }
+
+.carousel{
+  margin-bottom: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.carousel-inner{
+  width: 700px;
+}
+
+.contain{
+  height: auto;
+  width: auto;
+  margin-bottom: 0px;
+  border-bottom: 0px;
+}
+
+img.d-block.w-100{
+  height: 500px;
+  margin-top: 40px;  
+  width: fit-content;
+}
+
+
+
+
