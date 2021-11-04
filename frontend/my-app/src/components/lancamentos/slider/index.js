@@ -74,10 +74,6 @@ function Slider() {
                         <Rating name="stars" value={3} readOnly />
                     </Stack>
                 </div>
-
-                <div className="carousel-dots" >
-                    <Dots length={10} active={0} onClick="next" />
-                </div>
             </div>
         </section>
     )

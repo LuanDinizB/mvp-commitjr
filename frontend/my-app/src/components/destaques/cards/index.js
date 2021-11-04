@@ -10,10 +10,7 @@ function Cards(props) {
                     <Card.Img variant="top" src={'http://image.tmdb.org/t/p/original' + props.movies.poster_path} />
                     <Card.Body>
                         {console.log(props)}
-                        <Card.Title> {props.movies.original_title}</Card.Title>
-                        <Card.Text>
-                            {props.movies.overview}
-                        </Card.Text>
+                        <Card.Title> {props.movies.original_title}</Card.Title>                       
                     </Card.Body>
                 </Card>
             </>
