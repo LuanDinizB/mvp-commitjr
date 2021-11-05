@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import Samuel from '../../../assets/Samuel.jpg';
+import Poster from '../../../assets/posterDefault.jpg';
 import './jcss.css';
 
 
@@ -21,9 +21,9 @@ function CardsVazios(){
     return (
                 <>
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={Samuel} />
+                        <Card.Img variant="top" src={Poster} />
                         <Card.Body>
-                            <Card.Title> Samuel Faioli </Card.Title>
+                            <Card.Title> Hook </Card.Title>
                             <Card.Text>
                                 Selecione um Gênero para trocar os cards.
                             </Card.Text>

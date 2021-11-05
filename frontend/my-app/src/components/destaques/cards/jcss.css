@@ -9,5 +9,5 @@
   }
   
   .card-img-top{
-    height: 300px;
+    height: fit-content;
   }
