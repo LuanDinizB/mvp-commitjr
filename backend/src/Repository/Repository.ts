@@ -66,7 +66,7 @@ async function GetMovieByGenre(genero: String) {
 
 async function GetMoviesList(){
     try{
-        const response = await api.get(`/3/discover/movie?api_key=${api_key}&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=2&with_watch_monetization_types=flatrate`);
+        const response = await api.get(`/3/discover/movie?api_key=${api_key}&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=3&with_watch_monetization_types=flatrate`);
         if(response.status >= 200 && response.status <300){
             const movieList = response.data;
             return {
@@ -85,4 +85,24 @@ async function GetMoviesList(){
     }
 }
 
-export { GetUpcomingList, GetGenreList, GetMovieByGenre, GetMoviesList};
+async function GetMovieVideo(movieId: String){
+    try{
+        const response = await api.get(`3/movie/${movieId}/videos?api_key=<<api_key>>&language=pt-BR`);
+        if(response.status >= 200 && response.status <300){
+            const movieVideo = response.data;
+            return {
+                status: true,
+                data: movieVideo
+            }
+        }
+        return {
+            status: false,
+            data: "Failed the request",
+        }
+    }catch(err){
+        throw (err);
+        
+    }
+}
+
+export { GetUpcomingList, GetGenreList, GetMovieByGenre, GetMoviesList, GetMovieVideo};

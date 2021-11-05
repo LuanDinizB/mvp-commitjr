@@ -2,7 +2,7 @@ import api from './baseAPI';
 
 async function GetMovie() {
     try {
-        const response = await api.get('/movieList');
+        const response = await api.get(`/movieList`);
         if (response.status === 200) {
             const data = response.data;
             return ({

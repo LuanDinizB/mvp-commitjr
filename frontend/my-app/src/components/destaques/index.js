@@ -7,7 +7,7 @@ import {Cards, CardsVazios} from './cards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Selecao from '../../components/destaques/selecao';
 
-function Destaques(props) {
+function Destaques() {
 
     const [genreList, setGenreList] = useState([]);
     const [moviesList, setMoviesList] = useState([]);

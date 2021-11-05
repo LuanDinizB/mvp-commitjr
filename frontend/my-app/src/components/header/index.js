@@ -7,7 +7,7 @@ import './jcss.css';
     return (
         <header>
             <img src={Luan} className="imagemLuan"></img>
-            <h3 class="lancamentodestaque">Lançamentos || Destaques </h3>
+            <h3 className="lancamentodestaque">Lançamentos || Destaques </h3>
             <TextField id="outlined-basic" label="Outlined" variant="outlined" />
         </header>
     )

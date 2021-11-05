@@ -3,6 +3,7 @@ import UpcomingService from "../Domain/UpcomingService";
 import GenresService from "../Domain/GenreService";
 import MovieService from "../Domain/MovieService";
 import MovieListService from "../Domain/MovieListService";
+import MovieVideoService from "../Domain/movieVideo";
 
 class UpcomingController {
 
@@ -79,4 +80,22 @@ class MoviesListController {
     };
 };
 
-export { UpcomingController, GenresController, MoviesController, MoviesListController};
+class MoviesVideoController {
+    async getMoviesVideo(request: Request, response: Response) {
+        try {
+            const movieVideoData = new MovieVideoService();            
+            const movieId = request.params.movieId;
+            const movieVideo = await movieVideoData.getMovieVideo(movieId);
+            if (movieVideo != null) {
+                return response.send(movieVideo);
+            };
+            return response.send({ err: 'Err' });
+
+        } catch (err) {
+            throw err;
+        };
+
+    };
+};
+
+export { UpcomingController, GenresController, MoviesController, MoviesListController, MoviesVideoController};
