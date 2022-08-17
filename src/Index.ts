@@ -10,9 +10,6 @@ app.use(cors());
 app.use(express.json());
 app.use(router);
 
-
-
-
 app.listen(port, () => {
     console.log(`Rodando em: https://localhost:${port}`);
 })
