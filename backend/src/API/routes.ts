@@ -18,4 +18,5 @@ router.get('/movieList', movieList.getMovieList);
 
 router.get('/movieVideo/:movieId', movieVideo.getMoviesVideo);
 
+
 export default router;
